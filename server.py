@@ -33,7 +33,7 @@ while True:
                 elif data == 'Что такое протокол?':
                     answer = 'Протоколом называется набор правил, задающих форматы сообщений и процедуры,' \
                              ' которые позволяют компьютерам и прикладным программам обмениваться информацией.'
-                print(f'Вопрос: {answer}\n')
+                print(f'Ответ: {answer}\n')
                 connection.send(answer.encode())
     finally:
         connection.close()
